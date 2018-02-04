@@ -11,7 +11,7 @@ import requests
 
 # print('?'.join((auth_url, urlencode(header))))
 
-class YandexMetricaStats:
+class YandexMetrikaStats:
     def __init__(self, token, counter_name):
         self.token = token
         self.counter_name = counter_name
@@ -47,7 +47,7 @@ class YandexMetricaStats:
 token = 'AQAAAAAFZhbeAATKUX1yW0cqF03nqG0Az4pWRrQ'
 counter_name = 'liamnou.github.io'
 
-current_session = YandexMetricaStats(token, counter_name)
+current_session = YandexMetrikaStats(token, counter_name)
 print(current_session.get_counter_id())
 visits = current_session.get_visits()
 print(visits)
