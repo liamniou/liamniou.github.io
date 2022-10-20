@@ -1,221 +1,648 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!doctype html>
 <html>
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Stanislau Liamniou</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    /* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_GbQbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
 
-	<title>Stanislau Liamniou | Devops | liamnou@gmail.com</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: #f8f8f8;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B; }
 
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin: 0; }
 
-	<link rel="stylesheet" type="text/css" href="reset-fonts-grids.css" media="all" /> 
-	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
-	<style>
-	.photo-size {
-		height: 180px;
-		width: auto;
-	}
-	</style>
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 5px; }
 
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px; }
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px; }
+  h3.bold {
+    font-weight: 700; }
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px; }
+  h4.bold {
+    font-weight: 700; }
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px; }
+  h5.italic {
+    font-style: italic; }
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+  a:hover {
+    color: #2895F1; }
+  a .fa-external-link {
+    font-size: 12px;
+    vertical-align: text-top; }
+
+p,
+li {
+  font-size: 14px; }
+
+blockquote {
+  font-size: 14px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px; }
+
+em {
+  color: #999; }
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px; }
+  ul li {
+    padding-left: 10px; }
+  ul.minimal {
+    list-style: none;
+    padding: 0; }
+    ul.minimal li {
+      margin-bottom: 3px;
+      padding-left: 0; }
+  ul.two-column {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 28px;
+    column-count: 2;
+    column-gap: 28px; }
+    ul.two-column li {
+      padding-left: 0; }
+
+@page {
+  size: A4; }
+
+.container {
+  padding-top: 20px; }
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #800000; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px; }
+  .profile-pic img {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    border: 2px solid #800000; }
+
+.summary {
+  margin: 5px 0 5px; }
+
+/* Layouts */
+.page {
+  background: white;
+  width: 812px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #800000;
+  padding: 36px 22px 30px 34px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+  .page:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word; }
+
+.right-column {
+  width: auto;
+  overflow: hidden; }
+
+.item {
+  margin-bottom: 15px; }
+  .item:last-child {
+    margin-bottom: 0; }
+
+@media print {
+  body {
+    margin: 0; }
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none; }
+    .page .resume-header,
+    .page .resume-content {
+      padding: 0 22px 0 34px; }
+  .container {
+    page-break-inside: avoid; }
+  .work-container .item {
+    page-break-inside: avoid; }
+  .fa-external-link {
+    display: none; } }
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px; }
+  .info-tag-container .fa {
+    font-size: 14px;
+    width: 12px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle; }
+    .info-tag-container .fa.fa-map-marker {
+      font-size: 16px; }
+    .info-tag-container .fa.fa-mobile {
+      font-size: 18px; }
+    .info-tag-container .fa.fa-envelope-o {
+      font-size: 12px; }
+    .info-tag-container .fa.fa-desktop {
+      font-size: 11px; }
+    .info-tag-container .fa.fa-external-link {
+      width: auto;
+      font-size: inherit;
+      vertical-align: text-top; }
+  .info-tag-container .info-text {
+    font-size: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 139px; }
+
+.references-container .fa {
+  font-size: 14px; }
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400; }
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic; }
+
+  </style>
 </head>
+
 <body>
-
-<div id="doc2" class="yui-t7">
-	<div id="inner">
-	
-		<div id="hd">
-			<div class="yui-gc">
-				<div class="yui-u first">
-					<img src="./photo.jpg" class="photo-size">
-				</div>
-
-				<div class="yui-u">
-					<div class="contact-info">
-						<p><b>Stanislau Liamniou</b></p>
-						<p>Devops. Belarus, Minsk</p>
-						<p class="contacts email"><a href="mailto:liamnou@gmail.com">liamnou@gmail.com</a></p>
-						<p class="contacts linkedin"><a href="https://linkedin.com/in/liamniou">linkedin.com/in/liamniou</a></p>
-						<p class="contacts github"><a href="https://github.com/liamniou">github.com/liamniou</a></p>
-						<p class="contacts phone"><a href="tel:+375333933738">+375333933738</a></p>
-					</div><!--// .contact-info -->
-				</div>
-			</div><!--// .yui-gc -->
-		</div><!--// hd -->
-
-		<div id="bd">
-			<div id="yui-main">
-				<div class="yui-b">
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Summary</h2>
-						</div>
-						<div class="yui-u">
-							<p class="enlarge">
-								Devops engineer with 7 years of hands-on experience in designing and optimizing CI/CD environments. 
-								Proficient with Kubernetes, Python, several scripting languages and configuration management tools.
-								I quickly adapt to new environments and always get along with colleagues.
-							</p>
-						</div>
-					</div><!--// .yui-gf -->
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Core skills</h2>
-						</div>
-						<div class="yui-u">
-							<ul class="talent">
-								<li class="skills">Jenkins</li>
-								<li class="skills last">Python</li>
-							</ul>
-
-							<ul class="talent">
-								<li class="skills">Ansible</li>
-								<li class="skills last">Terraform</li>
-							</ul>
-
-							<ul class="talent">
-								<li class="skills">Kubernetes</li>
-								<li class="skills last">Docker</li>
-							</ul>
-						</div>
-					</div><!--// .yui-gf-->
-
-					<div class="yui-gf">	
-						<div class="yui-u first">
-							<h2>Experience</h2>
-						</div><!--// .yui-u -->
-						<div class="yui-u">
-							<div class="job">
-								<h2>AirConn Bel Technology, Minsk, Belarus</h2>
-								<h3>Devops engineer</h3>
-								<h4>May, 2019 » present time</h4>
-								<p>
-									- Support and CI development for Java/JavaScript/C++ microservice application<br/>
-									- Main stack: Jenkins, Kubernetes, Ansible, Docker, Python, HashiCorp  products (Terraform, Nomad, Packer, Consul, Vault), PostgreSQL, Liquibase, Kafka, Haproxy, Zookeeper, DigitalOcean, VMWare vSphere, Prometheus, Grafana<br/>
-									- Performed migration of Jenkins and Nexus to Kubernetes<br/>
-									- Implemented Modular Pipelines for Jenkins (based on MPL)<br/>
-									- Implemented Jenkins Configuration as Code<br/>
-									- Participated in creation of automation for environment provisioning (Terraform, Ansible, Python, etc.)<br/>
-									- Implemented runbook automation using Rundeck<br/>
-									- Automated Release Management workflow (Jenkins + Groovy + Jira API)
-								</p>
-							</div>
-							<div class="job">
-								<h2>Netcracker, Minsk, Belarus</h2>
-								<h3>Devops engineer</h3>
-								<h4>Aug, 2018 » May, 2019</h4>
-								<p>
-									- Support and improvement of CI infrastructure: RedHat, Openstack, Jenkins, Ansible, Gitlab<br/>
-									- Developed several Python solutions for configuration management optimization<br/>
-									- Performed conversion of Freestyle Jenkins jobs into Declarative pipelines with shared libraries<br/>
-									- Worked on improvement of Jenkins jobs managed by Jenkins Job Builder<br/>
-									- Also worked with Bash, Docker
-								</p>
-							</div>
-
-							<div class="job">
-								<h2>Scand, Minsk, Belarus</h2>
-								<h3>Devops engineer</h3>
-								<h4>May, 2017 » August, 2018</h4>
-								<p>
-									- Support and improvement of CI infrastructure: Jenkins, Bitbucket, MSBuild, Nant, Nunit<br/>
-									- Developed and implemented solution that spawns VMs using Jenkins, Powershell, Hyper-V and MSMQ<br/>
-									- Participated in R&D activities: find and implement cutting edge DevOps tools and best-practices<br/>
-									- Prepared migration plan to move project's source code from GitoLite to Bitbucket<br/>
-									- Implemented infrastructure-as-a-code approach: Ansible, Ansible AWX, Chocolatey<br/>
-									- Adopted CI infrastructure to use repository manager: Nexus 3 OSS that hosts NuGet, npm repositories<br/>
-									- Also worked with Zabbix, OpenStack, Gitlab, Python
-								</p>
-							</div>
-
-							<div class="job">
-								<h2>EPAM Systems, Minsk, Belarus</h2>
-								<h3>Devops engineer</h3>
-								<h4>Mar, 2016 » May, 2017</h4>
-								<p>
-									- Implemented automated deployment using Powershell and Team Foundation Server<br/>
-									- Performed a migration of frontend's code from TFVC to Git<br/>
-									- Re-organized build process to work with 2 separate repositories<br/>
-									- Performed configuration of servers using Powershell DSC<br/>
-									- Worked with XAML, vNext, MSBuild for building projects<br/>
-									- Worked with MS Test Manager for running automated tests
-								</p>
-							</div>
-
-							<div class="job">
-								<h2>EPAM Systems, Minsk, Belarus</h2>
-								<h3>Systems engineer</h3>
-								<h4>Mar, 2015 » Mar, 2016</h4>
-								<p>
-									- Development of Powershell DSC scripts to prepare servers for deployment<br/>
-									- Creation of deployment plans in BuildMaster CI<br/>
-									- Deployment of applications; further investigation and troubleshooting<br/>
-									- Communication with customer<br/>
-									- Solving environment issues related to deployed applications
-								</p>
-							</div>
-
-							<div class="job last">
-								<h2>EPAM Systems, Minsk, Belarus</h2>
-								<h3>2nd line Software Maintenance Engineer</h3>
-								<h4>Jul, 2013 » Mar, 2015</h4>
-								<p>
-									- Support of Windows-based environment: Windows 2005, 2008<br/>
-									- Support of CMS ADAM and several custom .NET applications<br/>
-									- DB support: MS SQL 2008<br/>
-									- Incident, problem management<br/>
-									- Communication with customers
-								</p>
-							</div>
-						</div><!--// .yui-u -->
-					</div><!--// .yui-gf -->
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Certifications</h2>
-						</div>
-						<div class="yui-u">
-							<div class="job">
-								<h2>Udemy</h2>
-								<h3>VPC Solutions with EC2 for Production: AWS with Terraform</h3>
-								<h4>Jun, 2019</h4>
-							</div>
-							<div class="job">
-								<h2>Udemy</h2>
-								<h3>AWS Essentials</h3>
-								<h4>May, 2019</h4>
-							</div>
-							<div class="job">
-								<h2>Netology</h2>
-								<h3>Python programming</h3>
-								<h4>Dec, 2017 » Apr, 2018</h4>
-							</div>
-							<div class="job last">
-								<h2>Coursera</h2>
-								<h3>Google Cloud Platform Fundamentals: Core Infrastructure</h3>
-								<h4>Apr, 2017</h4>
-							</div>
-						</div>
-					</div><!--// .yui-gf -->
-
-					<div class="yui-gf last">
-						<div class="yui-u first">
-							<h2>Education</h2>
-						</div>
-						<div class="yui-u">
-							<div class="job last">
-								<h2>Belarusian State Economic University</h2>
-								<h3>Master's degree, Economic Informatics</h3>
-								<h4>2009 » 2016</h4>
-							</div>
-						</div>
-					</div><!--// .yui-gf -->
-				</div><!--// .yui-b -->
-			</div><!--// yui-main -->
-		</div><!--// bd -->
-	</div><!-- // inner -->
-</div><!--// doc -->
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+      <div class="profile-header pull-left">
+        <h1>Stanislau Liamniou</h1>
+        <h2>DevOps Engineer</h2>
+      </div>
+      <div class="profile-pic pull-right">
+          <img src="https://avatars.githubusercontent.com/u/4567514?v&#x3D;4" alt="profile-pic">
+      </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+          <div class="title">
+            <h3>About</h3>
+            <div class="keyline"></div>
+          </div>
+        
+            <div class="info-tag-container">
+              <i class="fa fa-map-marker"></i>
+            
+              <h6 class="info-text">Sweden, Stockholm</h6>
+            </div>
+        
+            <div class="info-tag-container">
+              <i class="fa fa-envelope-o"></i>
+            
+              <h6 class="info-text">
+                <a href="http://liamniou.github.io" target="_blank">
+                  liamniou.s@gmail.com <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+        
+            <div class="info-tag-container">
+              <i class="fa fa-mobile"></i>
+            
+              <h6 class="info-text">
+                <a href="http://liamniou.github.io" target="_blank">
+                  +46738425795 <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+        
+        
+                      <div class="info-tag-container">
+                        <i class="fa fa-github"></i>
+                      
+                        <h6 class="info-text">
+                          <a href="http://github.com/liamniou" target="_blank">
+                            liamniou <i class="fa fa-external-link" aria-hidden="true"></i>
+                          </a>
+                        </h6>
+                      </div>
+                      <div class="info-tag-container">
+                        <i class="fa fa-linkedin-square"></i>
+                      
+                        <h6 class="info-text">
+                          <a href="https://www.linkedin.com/in/liamniou/" target="_blank">
+                            in/liamniou <i class="fa fa-external-link" aria-hidden="true"></i>
+                          </a>
+                        </h6>
+                      </div>
+        </section>
+        <div class="skills-container">
+          <section class="container">
+              <div class="title">
+                <h3>Core tools</h3>
+                <div class="keyline"></div>
+              </div>
+              <ul class="minimal">
+                <li>
+                  <h6>Terraform</h6>
+                </li>
+                <li>
+                  <h6>Python</h6>
+                </li>
+                <li>
+                  <h6>Kubernetes</h6>
+                </li>
+                <li>
+                  <h6>Jenkins</h6>
+                </li>
+              </ul>
+          </section>
+        </div>
+      </aside>
+      <div class="right-column">
+        <div class="container summary-container">
+          <div class="title">
+            <h3>Summary</h3>
+            <div class="keyline"></div>
+          </div>
+          <p class="summary">
+            Hello! I&#x27;m Stanislau, a DevOps Engineer with 9+ years of hands-on experience managing infrastructure and designing CI/CD pipelines. I&#x27;m proficient with Kubernetes, Python, several scripting languages, and configuration management tools. I quickly adapt to new environments and always get along with colleagues.
+          </p>
+        </div>
+        <div class="container work-container">
+          <div class="title">
+            <h3>Experience</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="http://klarna.com" target="_blank">
+                    Klarna <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">10/2020</span>
+                  <span class="endDate"> - Present</span>
+              </h5>
+            </div>
+        
+              <h4>Site Reliability Engineer</h4>
+        
+              <p class="summary">I am currently working on implementing a GitOps approach with ArgoCD and Kustomize to provide Jenkins as a service to Klarna teams.</p>
+        
+              <ul>
+                <li>I worked on a team developing a platform for managing a mono repository and deploying microservices to AWS. The platform was built using Nix, Terraform, Jenkins, and AWS Lambdas.</li>
+                <li>I deprecated some parts of the legacy code base and ported them to Python.</li>
+                <li>I developed a fork of Bitbucket Terraform Provider, adding support for the Bitbucket Workzone plugin.</li>
+              </ul>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="http://noogadev.com" target="_blank">
+                    Noogadev <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">05/2019</span>
+                  <span class="endDate"> - 10/2020</span>
+              </h5>
+            </div>
+        
+              <h4>Devops Engineer</h4>
+        
+              <p class="summary">I have been maintaining the infrastructure and CI/CD pipeline for the development team that was building a fiscal accounting application.</p>
+        
+              <ul>
+                <li>I worked with Jenkins, HashiCorp products (Terraform, Nomad, Packer, Consul, Vault), Python, and Kubernetes</li>
+                <li>I performed the migration of Jenkins to Kubernetes and implemented Jenkins Configuration as Code approach.</li>
+                <li>I automated some parts of the release management workflow with Jenkins, Groovy, and Jira API.</li>
+              </ul>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://www.netcracker.com" target="_blank">
+                    Netcracker <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">08/2018</span>
+                  <span class="endDate"> - 05/2019</span>
+              </h5>
+            </div>
+        
+              <h4>Devops Engineer</h4>
+        
+              <p class="summary">We have built CI pipelines for several development teams.</p>
+        
+              <ul>
+                <li>I worked with Jenkins, Ansible, Openstack, and Python.</li>
+                <li>I performed the conversion of Freestyle Jenkins jobs to Declarative pipelines with shared libraries.</li>
+                <li>I have been working on improving Jenkins jobs managed by the Jenkins Job Builder.</li>
+              </ul>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://scand.com" target="_blank">
+                    Scand <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">05/2017</span>
+                  <span class="endDate"> - 08/2018</span>
+              </h5>
+            </div>
+        
+              <h4>Devops Engineer</h4>
+        
+              <p class="summary">I was developing CI/CD pipelines for a project of 100 engineers, creating a .NET-based ERP platform.</p>
+        
+              <ul>
+                <li>I worked with Jenkins, Ansible, Bitbucket, Powershell, Hyper-V, etc.</li>
+                <li>I implemented the infrastructure-as-code approach with Ansible, Ansible AWX, and Chocolatey.</li>
+                <li>I also participated in R&amp;D activities.</li>
+              </ul>
+          </section>
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="http://epam.com" target="_blank">
+                    EPAM Systems <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">07/2013</span>
+                  <span class="endDate"> - 05/2017</span>
+              </h5>
+            </div>
+        
+              <h4>Systems Engineer</h4>
+        
+              <p class="summary">I have worked as a Systems Engineer on three projects supporting corporate clients.</p>
+        
+              <ul>
+                <li>Provided support for the CMS system hosted in Windows Server environment.</li>
+                <li>Participated in the migration of customer infrastructure between data centers using Powershell DSC and Buildmaster CI.</li>
+                <li>Developed CI/CD pipelines for a .NET application using Team Foundation Server.</li>
+              </ul>
+          </section>
+        </div>
+        <div class="container projects-container">
+          <div class="title">
+            <h3>Projects</h3>
+            <div class="keyline"></div>
+          </div>
+        
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                    <a href="https://github.com/liamniou/transmission_mgmt_bot" target="_blank">
+                      Transmission management Telegram bot <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                </h3>
+                <h5 class="italic pull-right">
+                </h5>
+              </div>
+        
+                <p class="summary">The bot is a Python application that helps managing Transmission server via text commands. In addition, the bot can trigger a build in Terraform cloud and capture a value of Terraform output variable that stores IP address of the provisioned server.</p>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                    <a href="https://github.com/liamniou/hemnet_parser_bot" target="_blank">
+                      Hemnet.se parser Telegram bot <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                </h3>
+                <h5 class="italic pull-right">
+                </h5>
+              </div>
+        
+                <p class="summary">The bot is a Python application that crawls pages from Hemnet.se and sends them to a Telegram channel as Telegraph pages.</p>
+            </section>
+        </div>
+        <div class="container volunteer-container">
+          <div class="title">
+            <h3>Volunteer</h3>
+            <div class="keyline"></div>
+          </div>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://www.facebook.com/palianytsiaSE" target="_blank">
+                    Palianytsia Stockholm <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">03/2022</span>
+                  <span class="endDate"> - 06/2022</span>
+              </h5>
+            </div>
+              <h5>Volunteer</h5>
+        
+              <p class="summary">Palianytsia is a non-profit group that provides clothing and hygiene products for Ukrainian refugees.</p>
+        
+              <ul>
+                <li>I helped out as a volunteer for a while.</li>
+              </ul>
+          </section>
+        </div>
+        <div class="container education-container">
+          <div class="title">
+          <h3>Education</h3>
+          <div class="keyline"></div>
+        </div>
+         
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="http://bseu.by" target="_blank">
+                    Belarusian State Economic University <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">09/2009</span>
+                  <span class="endDate"> - 02/2016</span>
+              </h5>
+            </div>
+        
+            <h4>Economic Informatics. Master&#x27;s Degree</h4>
+        
+          </section>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://www.udemy.com/certificate/UC-78SP3Z23/" target="_blank">
+                    Udemy <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">06/2019</span>
+                  <span class="endDate"> - 06/2019</span>
+              </h5>
+            </div>
+        
+            <h4>Course &#x27;VPC Solutions with EC2 for Production: AWS with Terraform&#x27;</h4>
+        
+          </section>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://www.udemy.com/certificate/UC-EZBJND0Q/" target="_blank">
+                    Udemy <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">05/2019</span>
+                  <span class="endDate"> - 05/2019</span>
+              </h5>
+            </div>
+        
+            <h4>Course &#x27;AWS Essentials&#x27;</h4>
+        
+          </section>
+        
+          <section class="item">
+            <div class="section-header clearfix">
+              <h3 class="bold pull-left">
+                  <a href="https://drive.google.com/file/d/1JbZOxNbXpB9tw1R_ZDEAoZPonZhyGc5f/view" target="_blank">
+                    Netology <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+              </h3>
+              <h5 class="italic pull-right">
+                  <span class="startDate">02/2018</span>
+                  <span class="endDate"> - 08/2018</span>
+              </h5>
+            </div>
+        
+            <h4>Course &#x27;Python programming&#x27;</h4>
+        
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
-</html>
 
+</html>
